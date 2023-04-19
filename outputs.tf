@@ -7,6 +7,6 @@ output "instance_arn" {
 }
 
 output "instance_public_ip" {
-  value       = aws_instance.web.public_ips
+  value       = aws_instance.web.public_ip
   description = "The public IP address of the main server instance."
 }
