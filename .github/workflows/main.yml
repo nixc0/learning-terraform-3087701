@@ -60,7 +60,7 @@ jobs:
 
              echo "EXIT_FLAG=critical=1" >> env.list 
 
-             docker run --env-file env.list -v "$(pwd):/var/src" lacework/codesec-iac:latest
+             docker run --env-file env.list -v "$(pwd):/app/src" lacework/codesec-iac:latest
 
         env:
 
